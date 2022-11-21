@@ -13,6 +13,7 @@ db.once('open', function () {
   console.log('Mongoose is connected');
 });
 
+// connect Mongoose to our mongodb
 mongoose.connect(process.env.DB_URL);
 
 //implements express
