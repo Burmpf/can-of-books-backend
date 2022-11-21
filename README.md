@@ -26,14 +26,34 @@ Create a web app to track what books have impacted the user, and what's recommen
 
 ## Estimates
 
-### Name of feature: Set up your repositories
+### Name of feature #1: Set up your repositories
 
 Estimate of time needed to complete: 90 minutes
 
 Start time: 1:20pm
 
-Finish time: _____
+Finish time: 1:55pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 35 minutes
+
+### Name of feature #2: Storage
+
+Estimate of time needed to complete: 90 minutes
+
+Start time: 2:05pm
+
+Finish time: 3:30pm
+
+Actual time needed to complete: 85 minutes
+
+### Name of feature #3: Book Component
+
+Estimate of time needed to complete: 90 minutes
+
+Start time: 3:35pm
+
+Finish time: 
+
+Actual time needed to complete:  minutes
 
 ## Credit and Collaborations
