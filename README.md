@@ -1,11 +1,39 @@
-# Start your own "Can of Books" App
+# Can-Of-Books-Backend
 
-This repository has starter code to begin work on creating your own online bookshelf.
+**Author**:
 
-## What can books do?
+- Keyan Tabor
+- Mike McCarty
 
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
+**Version**: 1.0.0
 
-## Use this template
+## Overview
 
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
+Create a web app to track what books have impacted the user, and what's recommended to read next. This respository is one-half of the required application and contains the code for the back-end of the application.
+
+## Getting Started
+
+- Initial setup of repositories
+
+## Architecture
+
+![Can-Of-Books Architecture]('./images/architecture.png')
+
+## Change Log
+
+21 November 1:20pm Commenced setting up repositories
+21 November 1:55pm Completed setting up repositories
+
+## Estimates
+
+### Name of feature: Set up your repositories
+
+Estimate of time needed to complete: 90 minutes
+
+Start time: 1:20pm
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+## Credit and Collaborations
