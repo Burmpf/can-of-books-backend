@@ -23,6 +23,8 @@ Create a web app to track what books have impacted the user, and what's recommen
 
 21 November 1:20pm Commenced setting up repositories
 21 November 1:55pm Completed setting up repositories
+21 November 2:05pm Commenced working on the back-end
+21 November 3:30pm Completed setting up the back-end
 
 ## Estimates
 
@@ -52,8 +54,10 @@ Estimate of time needed to complete: 90 minutes
 
 Start time: 3:35pm
 
-Finish time: 
+Finish time: 5:13pm
 
-Actual time needed to complete:  minutes
+Actual time needed to complete:  108 minutes
 
 ## Credit and Collaborations
+
+Thanks to Justin and Sheyna for the much needed assistance!
