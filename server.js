@@ -22,6 +22,9 @@ const app = express();
 // Use of CORS
 app.use(cors());
 
+//must have to receive json data from a request
+app.use(express.json());
+
 // Verifies server is running
 console.log('I am alive!');
 
@@ -29,7 +32,7 @@ console.log('I am alive!');
 const { response } = require('express');
 
 // Establishes the server port
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3001;
 
 // ROUTES
 app.get('/', (request, response) => {
@@ -37,6 +40,14 @@ app.get('/', (request, response) => {
 })
 
 app.get('/books', getBooks);
+app.post('/books', postBooks);
+//path parameter - a variable that we declare in the path
+// EX URL:
+// http://localhost:3001/books/k6s54f6as51f6as8ef4
+// I can access the value k6s54f6as51f6as8ef4 with 'req.params.id'
+
+app.delete('/books/:id', deleteBooks);
+//:id sets a variable in the path and can be accessed with req.params.id
 
 async function getBooks (request, response, next) {
   try {
@@ -46,6 +57,41 @@ async function getBooks (request, response, next) {
     next(error);
   }
 }
+
+
+/* 
+for a query 
+http://localhost:3001/cat?color=orange
+to access orange
+req.query.color
+
+*/
+
+async function postBooks(req, res, next) {
+  try {
+    console.log(req.body);
+    //we need the book back from the db with the id and version # (createdBook)
+   let createdBook = await Book.create(req.body);
+    res.send(createdBook);
+  } catch (error) {
+    next(error);
+  }
+}
+
+async function deleteBooks(req, res, next) {
+  try {
+    //get the ID of the book we want to delete:
+    console.log(req.params.id);
+    
+    // make a request to the database to delete the cat in question
+    // do not assume you will get a response
+    await Book.findByIdAndDelete(req.params.id);
+    res.send('book deleted');
+  } catch (error) {
+    next(error)
+  }
+}
+
 
 app.get('*', (request, response) => {
   response.status(404).send('Not Available');
