@@ -9,21 +9,21 @@ async function seed() {
     await Book.create({
         title: 'Hunt For Red October',
         description: 'A novel about a CIA analyst named Jack Ryan looking for a Russian submarine called Red October that has a silent propulsion drive and attempts to stop World War III from starting.',
-        status: true
+        status: 'wow these are words'
     })
     console.log('Hunt For Red... was just added to the d/b!');
 
     await Book.create({
         title: 'Permanent Record',
         description: 'Edward Snowden risked everything to expose the US government surveillance of citizen data.',
-        status: true
+        status: 'words mean things'
     })
     console.log('A second book was just added to our database!');
 
     await Book.create({
         title: 'Pain Killer, A Memoir of Big League Addiction',
         description: 'An autobiography of NHL player Brantt Mhyers and the story of his addition and path to recovery.',
-        status: true
+        status: 'I am use word good'
     })
     console.log('A third and final book was just added to the database!');
     
